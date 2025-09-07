@@ -37,7 +37,29 @@
     </form>
   </div>
 </nav>
-    <h1>soon™</h1>
+    <form>
+      <div class="form-group">
+        <label for="animalName">Animal Name</label>
+        <input type="name" class="form-control" id="animalName" aria-describedby="nameHelp" placeholder="Enter Animal Name">
+        <small id="nameHelp" class="form-text text-muted">What is the name of the animal?</small>
+      </div>
+      <div class="form-group">
+        <label for="animalSummary">Animal Summary</label>
+        <input type="summary" class="form-control" id="animalSummary" aria-describedby="summaryHelp" placeholder="Enter Animal Summary">
+        <small id="summaryHelp" class="form-text text-muted">Enter a brief summary for the animal.</small>
+      </div>
+      <div class="form-group">
+        <label for="animalDetails">Animal Details</label>
+        <input type="detail" class="form-control" id="animalDetails" aria-describedby="detailHelp" placeholder="Enter Animal Details">
+        <small id="detailHelp" class="form-text text-muted">Enter more details about the animal.</small>
+      </div>
+      <div class="form-group">
+        <label for="animalImage">Animal Image</label>
+        <input type="imageUrl" class="form-control" id="animaImage" aria-describedby="imageHelp" placeholder="Enter URL of image of Animal">
+        <small id="imageHelp" class="form-text text-muted">Enter a URL of the image of the animal you want to add.</small>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
 </body>
 
 </html>
