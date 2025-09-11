@@ -1,6 +1,8 @@
+<!--Details screen for Animal Showcase web app-->
 <!DOCTYPE html>
 <html lang="en">
 
+<!--Header of html for details page. Imports Bootstrap 5.3.8 CSS and local style.css-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +12,9 @@
 </head>
 
 <body>
+<!--All elements are stylized by Bootstrap 5.3.8, with some image editing from the style.css-->
+
+<!--Navbar-->
   <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
   <a class="navbar-brand" href="#">Travis's Animal Showcase</a>
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,21 +23,25 @@
 
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">Home</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="details.html">Details</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="about.html">About Me</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="new-animal-form.html">Add Animal</a>
-      </li>
+        <ul class="nav nav-underline">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="details.html">Details</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="new-animal-form.html">Add Animal</a>
+            </li>
+        </ul>
     </ul>
   </div>
 </nav>
+
+  <!--Animals showcased in cards. They have a URL image attached, a heading for the animal name, and a more detailed summary of each animal.-->
     <ul class="nav justify-content-center">
     <li>
         <div class="card" style="width: 18rem;">
@@ -89,9 +98,13 @@
         </div>  
     </li>
     </ul>
+    
+    <!--Button that takes user back to home page-->
     <p>
     <a href="index.html"class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Go Back</a> 
     </p>
+
+    <!--Imports Bootstrap 5.3.8 JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 
